@@ -1,0 +1,1106 @@
+    Initilizing Matrix U ....
+    Finish Initilizing!
+    Initilizing Matrix V ....
+    Finish Initilizing!
+    Initilizing biasFactor....
+    Finish Initilizing!
+========================
+Update for Round 1
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.915844
+CrossValidationRMSE:1.003697
+Saving model for 1
+========================
+Update for Round 2
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.884199
+CrossValidationRMSE:0.979644
+Saving model for 2
+========================
+Update for Round 3
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.864199
+CrossValidationRMSE:0.967975
+Saving model for 3
+========================
+Update for Round 4
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.847107
+CrossValidationRMSE:0.960053
+Saving model for 4
+========================
+Update for Round 5
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.833401
+CrossValidationRMSE:0.954836
+Saving model for 5
+========================
+Update for Round 6
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.822679
+CrossValidationRMSE:0.951440
+Saving model for 6
+========================
+Update for Round 7
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.814257
+CrossValidationRMSE:0.949183
+Saving model for 7
+========================
+Update for Round 8
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.807549
+CrossValidationRMSE:0.947624
+Saving model for 8
+========================
+Update for Round 9
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.802123
+CrossValidationRMSE:0.946501
+Saving model for 9
+========================
+Update for Round 10
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.797672
+CrossValidationRMSE:0.945663
+Saving model for 10
+========================
+Update for Round 11
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.793983
+CrossValidationRMSE:0.945012
+Saving model for 11
+========================
+Update for Round 12
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.790891
+CrossValidationRMSE:0.944496
+Saving model for 12
+========================
+Update for Round 13
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.788273
+CrossValidationRMSE:0.944075
+Saving model for 13
+========================
+Update for Round 14
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.786035
+CrossValidationRMSE:0.943728
+Saving model for 14
+========================
+Update for Round 15
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.784103
+CrossValidationRMSE:0.943430
+Saving model for 15
+========================
+Update for Round 16
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.782426
+CrossValidationRMSE:0.943181
+Saving model for 16
+========================
+Update for Round 17
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.780956
+CrossValidationRMSE:0.942965
+Saving model for 17
+========================
+Update for Round 18
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.779651
+CrossValidationRMSE:0.942776
+Saving model for 18
+========================
+Update for Round 19
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.778499
+CrossValidationRMSE:0.942610
+Saving model for 19
+========================
+Update for Round 20
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.777468
+CrossValidationRMSE:0.942467
+Saving model for 20
+========================
+Update for Round 21
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.776537
+CrossValidationRMSE:0.942338
+Saving model for 21
+========================
+Update for Round 22
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.775699
+CrossValidationRMSE:0.942224
+Saving model for 22
+========================
+Update for Round 23
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.774942
+CrossValidationRMSE:0.942128
+Saving model for 23
+========================
+Update for Round 24
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.774256
+CrossValidationRMSE:0.942035
+Saving model for 24
+========================
+Update for Round 25
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.773623
+CrossValidationRMSE:0.941958
+Saving model for 25
+========================
+Update for Round 26
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.773046
+CrossValidationRMSE:0.941888
+Saving model for 26
+========================
+Update for Round 27
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.772514
+CrossValidationRMSE:0.941826
+Saving model for 27
+========================
+Update for Round 28
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.772029
+CrossValidationRMSE:0.941771
+Saving model for 28
+========================
+Update for Round 29
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.771577
+CrossValidationRMSE:0.941720
+Saving model for 29
+========================
+Update for Round 30
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.771162
+CrossValidationRMSE:0.941679
+Saving model for 30
+========================
+Update for Round 31
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.770771
+CrossValidationRMSE:0.941641
+Saving model for 31
+========================
+Update for Round 32
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.770414
+CrossValidationRMSE:0.941607
+Saving model for 32
+========================
+Update for Round 33
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.770077
+CrossValidationRMSE:0.941578
+Saving model for 33
+========================
+Update for Round 34
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.769766
+CrossValidationRMSE:0.941552
+Saving model for 34
+========================
+Update for Round 35
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.769477
+CrossValidationRMSE:0.941529
+Saving model for 35
+========================
+Update for Round 36
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.7692
+CrossValidationRMSE:0.941513
+Saving model for 36
+========================
+Update for Round 37
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.768945
+CrossValidationRMSE:0.941496
+Saving model for 37
+========================
+Update for Round 38
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.768711
+CrossValidationRMSE:0.941482
+Saving model for 38
+========================
+Update for Round 39
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.768484
+CrossValidationRMSE:0.941470
+Saving model for 39
+========================
+Update for Round 40
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.768271
+CrossValidationRMSE:0.941459
+Saving model for 40
+========================
+Update for Round 41
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.768076
+CrossValidationRMSE:0.941456
+Saving model for 41
+========================
+Update for Round 42
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.767887
+CrossValidationRMSE:0.941446
+Saving model for 42
+========================
+Update for Round 43
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.767712
+CrossValidationRMSE:0.941444
+Saving model for 43
+========================
+Update for Round 44
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.767547
+CrossValidationRMSE:0.941441
+Saving model for 44
+========================
+Update for Round 45
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.767389
+CrossValidationRMSE:0.941439
+Saving model for 45
+========================
+Update for Round 46
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.767238
+CrossValidationRMSE:0.941440
+Saving model for 46
+========================
+Update for Round 47
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.767095
+CrossValidationRMSE:0.941438
+Saving model for 47
+========================
+Update for Round 48
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.766963
+CrossValidationRMSE:0.941441
+Saving model for 48
+========================
+Update for Round 49
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.766837
+CrossValidationRMSE:0.941442
+Saving model for 49
+========================
+Update for Round 50
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.766718
+CrossValidationRMSE:0.941446
+Saving model for 50
+========================
+Update for Round 51
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.766603
+CrossValidationRMSE:0.941449
+Saving model for 51
+========================
+Update for Round 52
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.766495
+CrossValidationRMSE:0.941451
+Saving model for 52
+========================
+Update for Round 53
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.766391
+CrossValidationRMSE:0.941455
+Saving model for 53
+========================
+Update for Round 54
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.76629
+CrossValidationRMSE:0.941462
+Saving model for 54
+========================
+Update for Round 55
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.766194
+CrossValidationRMSE:0.941466
+Saving model for 55
+========================
+Update for Round 56
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.766107
+CrossValidationRMSE:0.941472
+Saving model for 56
+========================
+Update for Round 57
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.76602
+CrossValidationRMSE:0.941476
+Saving model for 57
+========================
+Update for Round 58
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765941
+CrossValidationRMSE:0.941483
+Saving model for 58
+========================
+Update for Round 59
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.76586
+CrossValidationRMSE:0.941489
+Saving model for 59
+========================
+Update for Round 60
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765786
+CrossValidationRMSE:0.941494
+Saving model for 60
+========================
+Update for Round 61
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765714
+CrossValidationRMSE:0.941500
+Saving model for 61
+========================
+Update for Round 62
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765647
+CrossValidationRMSE:0.941504
+Saving model for 62
+========================
+Update for Round 63
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765584
+CrossValidationRMSE:0.941510
+Saving model for 63
+========================
+Update for Round 64
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.76552
+CrossValidationRMSE:0.941517
+Saving model for 64
+========================
+Update for Round 65
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765458
+CrossValidationRMSE:0.941524
+Saving model for 65
+========================
+Update for Round 66
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765406
+CrossValidationRMSE:0.941531
+Saving model for 66
+========================
+Update for Round 67
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765348
+CrossValidationRMSE:0.941539
+Saving model for 67
+========================
+Update for Round 68
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765295
+CrossValidationRMSE:0.941543
+Saving model for 68
+========================
+Update for Round 69
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765244
+CrossValidationRMSE:0.941551
+Saving model for 69
+========================
+Update for Round 70
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765195
+CrossValidationRMSE:0.941558
+Saving model for 70
+========================
+Update for Round 71
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765145
+CrossValidationRMSE:0.941564
+Saving model for 71
+========================
+Update for Round 72
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765101
+CrossValidationRMSE:0.941569
+Saving model for 72
+========================
+Update for Round 73
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765058
+CrossValidationRMSE:0.941574
+Saving model for 73
+========================
+Update for Round 74
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.765019
+CrossValidationRMSE:0.941583
+Saving model for 74
+========================
+Update for Round 75
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764973
+CrossValidationRMSE:0.941585
+Saving model for 75
+========================
+Update for Round 76
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764936
+CrossValidationRMSE:0.941594
+Saving model for 76
+========================
+Update for Round 77
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764898
+CrossValidationRMSE:0.941597
+Saving model for 77
+========================
+Update for Round 78
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764861
+CrossValidationRMSE:0.941604
+Saving model for 78
+========================
+Update for Round 79
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764826
+CrossValidationRMSE:0.941610
+Saving model for 79
+========================
+Update for Round 80
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.76479
+CrossValidationRMSE:0.941616
+Saving model for 80
+========================
+Update for Round 81
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764757
+CrossValidationRMSE:0.941619
+Saving model for 81
+========================
+Update for Round 82
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764726
+CrossValidationRMSE:0.941624
+Saving model for 82
+========================
+Update for Round 83
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764693
+CrossValidationRMSE:0.941629
+Saving model for 83
+========================
+Update for Round 84
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764662
+CrossValidationRMSE:0.941633
+Saving model for 84
+========================
+Update for Round 85
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764637
+CrossValidationRMSE:0.941639
+Saving model for 85
+========================
+Update for Round 86
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764606
+CrossValidationRMSE:0.941642
+Saving model for 86
+========================
+Update for Round 87
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.76458
+CrossValidationRMSE:0.941648
+Saving model for 87
+========================
+Update for Round 88
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764553
+CrossValidationRMSE:0.941652
+Saving model for 88
+========================
+Update for Round 89
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764526
+CrossValidationRMSE:0.941655
+Saving model for 89
+========================
+Update for Round 90
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.7645
+CrossValidationRMSE:0.941661
+Saving model for 90
+========================
+Update for Round 91
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764476
+CrossValidationRMSE:0.941665
+Saving model for 91
+========================
+Update for Round 92
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764452
+CrossValidationRMSE:0.941669
+Saving model for 92
+========================
+Update for Round 93
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.76443
+CrossValidationRMSE:0.941673
+Saving model for 93
+========================
+Update for Round 94
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764407
+CrossValidationRMSE:0.941677
+Saving model for 94
+========================
+Update for Round 95
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764387
+CrossValidationRMSE:0.941680
+Saving model for 95
+========================
+Update for Round 96
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764366
+CrossValidationRMSE:0.941682
+Saving model for 96
+========================
+Update for Round 97
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764344
+CrossValidationRMSE:0.941687
+Saving model for 97
+========================
+Update for Round 98
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764323
+CrossValidationRMSE:0.941691
+Saving model for 98
+========================
+Update for Round 99
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764305
+CrossValidationRMSE:0.941691
+Saving model for 99
+========================
+Update for Round 100
+    SGD Updating the Matrix U... 
+    Finish SGD Update!
+    SGD Updating the Matrix V... 
+    Finish SGD Update!
+   Updating the bias factor...
+   Finish Update BiaFactor!
+RMSE:0.764286
+CrossValidationRMSE:0.941699
+Saving model for 100
