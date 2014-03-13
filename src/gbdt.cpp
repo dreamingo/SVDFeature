@@ -93,16 +93,14 @@ bool GBDT::Init(const Config* config){
         // m_trees_[i].m_trainSamples = NULL;
         m_trees_[i].m_nSamples = -1;
     }
-#ifdef DEBUG
     cout << "-------configure--------" << endl;
-    cout <<  "  max_epochs: " << m_max_epochs << endl;
-    cout <<  "  max_tree_leafes: " << m_max_tree_leafes << endl;
+    cout <<  "  max_epochs: " << m_max_epochs_ << endl;
+    cout <<  "  max_tree_leafes: " << m_max_tree_leafs_ << endl;
     cout <<  "  feature_subspace_size: " << m_feature_subspace_size_ << endl;
-    cout <<  "  use_opt_splitpoint: " << m_use_opt_splitpoint << endl;
     cout <<  "  learn_rate: " << rt_lrate_ << endl;
-    cout <<  "  data_sample_ratio: " << m_data_sample_ratio << endl;
+    cout <<  "  data_sample_ratio: " << m_data_sample_ratio_ << endl;
+    cout <<  "  rt_lambda: " << rt_lambda << endl;
     cout << endl;
-#endif
 }
 
 GBDT::~GBDT(){
@@ -209,6 +207,7 @@ y_matrix, the rating matrix
     //--Build the tree
     for(int i = 0; i < m_max_tree_leafs_; i++){
         node* largest_node = largest_nodes[0].m_node;
+        // printf("Buiding the %d leaf... \n", i);
         TrainSingleTree(
                 largest_node, //The node with largest number of train sample
                 largest_nodes,//A list contain for the nodeReduced
@@ -227,6 +226,9 @@ y_matrix, the rating matrix
     m_train_epochs_ ++;
 
     rand_feature_index.clear();
+    g_ij.clear();
+    h_ij.clear();
+    y_predict.clear();
     return true;
 }
 
@@ -271,15 +273,6 @@ void GBDT::TrainSingleTree(
     map<int, vector<int> > user_rating_item_list = y_matrix->get_user_rating_item_list();
     map<int, vector<int> > item_rated_by_user_list = y_matrix->get_item_rated_by_user_list();
 
-    // for(map<int, vector<int> >::iterator itr = user_rating_item_list.begin();
-    //         itr != user_rating_item_list.end();
-    //         itr++){
-    //     printf("----------\nuser[%d]:", itr->first);
-    //     for(int i = 0; i < itr->second.size(); i++){
-    //         printf("%d ", itr->second[i]);
-    //     }
-    //     printf("\n");
-    // }
     if(c_flag == 'U'){
         for(int i = 0; i < rand_sample_index.size(); i++){
             int uid = rand_sample_index[i];
@@ -318,6 +311,8 @@ void GBDT::TrainSingleTree(
         G_all += g_ij[make_pair<int, int>(uid, iid)] * val;
         H_all += h_ij[make_pair<int, int>(uid, iid)] * val * val;
     }
+    assert(isnan(G_all) == false);
+    assert(isnan(H_all) == false);
 
     // ======================================
     // Choose the feature with its split value, 
@@ -367,6 +362,8 @@ void GBDT::TrainSingleTree(
             G_left += g_ij[make_pair<int, int>(uid,iid)] * val;
             H_left += h_ij[make_pair<int, int>(uid,iid)] * val * val;
 
+            assert(isnan(G_left) == false);
+            assert(isnan(H_left) == false);
             // printf("G_left:%f, G_all:%f\n", G_left, G_all);
             // printf("H_left:%f, H_all:%f\n", H_left, H_all);
 
@@ -376,9 +373,31 @@ void GBDT::TrainSingleTree(
             G_right = G_all - G_left;
             H_right = G_all - H_left;
 
+            assert(isnan(G_right) == false);
+            assert(isnan(H_right) == false);
+
             float loss_reduction = (G_left * G_left)/(H_left + rt_lambda) + 
                 (G_right * G_right)/(H_right + rt_lambda) - 
                 (G_all * G_all)/(H_all + rt_lambda);
+
+            if(isnan(loss_reduction)){
+                printf("rand_sample_index.size():%d\n", rand_sample_index.size());
+                printf("rt_lambda:%f\n", rt_lambda);
+                printf("G_left: %f\n", G_left);
+                printf("G_right: %f\n", G_right);
+
+                printf("H_left: %f\n", H_left);
+                printf("H_right: %f\n", H_right);
+
+                printf("H_all: %f\n", H_all);
+                printf("G_all: %f\n", G_all);
+
+                printf("H_left + rt_lambda: %f\n", H_left + rt_lambda);
+                printf("H_right + rt_lambda: %f\n", H_right + rt_lambda);
+                printf("H_all + rt_lambda: %f\n", H_all + rt_lambda);
+                exit(-1);
+            }
+
             if( loss_reduction > best_gain_in_one_feature){
                 best_gain_in_one_feature = loss_reduction;
                 best_split_val = f_val;
@@ -394,6 +413,7 @@ void GBDT::TrainSingleTree(
 
     largest_node->m_featureNr = best_feature_index;
     largest_node->m_value = best_split_val_all;
+
 
     node* left_node = new node();
     node* right_node = new node();
@@ -411,18 +431,20 @@ void GBDT::TrainSingleTree(
         }
     }
 
-    float mean_right = sum_right/right_node->m_trainSamples.size() ;
-    float mean_left = sum_left/left_node->m_trainSamples.size() ;
 
     //Break if too less sample
     //to be a leaf in the tree;
+    float mean_right = 0.0 ;
+    float mean_left = 0.0 ;
     if(left_node->m_trainSamples.size() < 1 ||
             right_node->m_trainSamples.size() < 1)
     {
+
         largest_node->m_featureNr = -1;
         largest_node->m_value = left_node->m_trainSamples.size() < 1 ?
-            mean_right:
-            mean_left;
+            sum_right/right_node->m_trainSamples.size() :
+            sum_left/left_node->m_trainSamples.size() ;
+
         largest_node->m_toSmallerEqual = NULL;
         largest_node->m_toLarger = NULL;
         largest_node->m_trainSamples.clear();
@@ -442,6 +464,8 @@ void GBDT::TrainSingleTree(
         delete right_node;
     }
     else{
+        mean_right = sum_right/right_node->m_trainSamples.size() ;
+        mean_left = sum_left/left_node->m_trainSamples.size() ;
         left_node->m_nSamples = left_node->m_trainSamples.size();
         left_node->m_featureNr = -1;
         left_node->m_toSmallerEqual = NULL;
@@ -469,10 +493,12 @@ void GBDT::TrainSingleTree(
         largest_nodes.push_back ( hiNode );
         push_heap ( largest_nodes.begin(), largest_nodes.end(), compareNodeReduced );
     }
+    // printf("    BestFeatureIndex:%d bestSplitValue:%f, with gain:%f\n",
+    //         best_feature_index, best_split_val_all, gain);
 
-    g_ij.clear();
-    h_ij.clear();
-    y_predict.clear();
+    // printf("    With left node_size: %d, left_mean:%f right node_size:%d, right_mean:%f\n", 
+            // left_node->m_nSamples, mean_left,
+            // right_node->m_nSamples, mean_right);
 }
 
 void GBDT::CleanTree(node* n){
@@ -497,14 +523,18 @@ void GBDT::PredictAllOutputs(const T_DATA& data, T_DTYPE*  k_dim_matrix_val_){
      *  k_dim_matrix_val_: The kth dim of U/V to be update
      */
     unsigned int n_sample = data.num_row;
-    for( unsigned int i = 0; i < n_sample; i++){
-        double sum = 0.0;
-        for(unsigned int j = 0; j < m_train_epochs_; j++){
-            float v = PredictSingleTree( &(m_trees_[j]), data, i );
-            sum += v * rt_lrate_;
-        }
-        k_dim_matrix_val_[i] = sum;
+    for(unsigned int i = 0; i < n_sample; i++){
+        float v = PredictSingleTree(&(m_trees_[m_train_epochs_ - 1]), data, i);
+        k_dim_matrix_val_[i] += v * rt_lrate_;
     }
+    // for( unsigned int i = 0; i < n_sample; i++){
+    //     double sum = 0.0;
+    //     for(unsigned int j = 0; j < m_train_epochs_; j++){
+    //         float v = PredictSingleTree( &(m_trees_[j]), data, i );
+    //         sum += v * rt_lrate_;
+    //     }
+    //     k_dim_matrix_val_[i] = sum;
+    // }
 }
 
 T_DTYPE GBDT::PredictSingleTree(const node* n, const T_DATA& data, const int& dim){

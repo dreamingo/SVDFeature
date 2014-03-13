@@ -53,7 +53,7 @@ private:
         else if(name == "rt_lrate") rt_lrate = strtof(val.c_str(), NULL);
         else if(name == "m_data_sample_ratio") m_data_sample_ratio = strtof(val.c_str(), NULL);
         else if(name == "sgd_lambda") sgd_lambda= strtof(val.c_str(), NULL);
-        else if(name == "rt_lambda") sgd_lambda= strtof(val.c_str(), NULL);
+        else if(name == "rt_lambda") rt_lambda= strtof(val.c_str(), NULL);
     }
 public:
     Config(const string& file_name){

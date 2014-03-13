@@ -501,6 +501,8 @@ void FactorMatrix::GBDTUpdate(const FactorMatrix* U,
         printf("    Updating the %dth factor GBDT of matrix %c ...\n", i, c_flag);
         this->gbdt_for_each_factor_[i].ModelUpdate(this->feature_val_, 
                 U,V, bias_factor, this->c_flag, i, y_matrix);
+        this->gbdt_for_each_factor_[i].PredictAllOutputs(this->feature_val_,
+                this->matrix_val_.matrix[i]);
     }
 }
 
