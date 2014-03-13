@@ -271,11 +271,22 @@ void GBDT::TrainSingleTree(
     map<int, vector<int> > user_rating_item_list = y_matrix->get_user_rating_item_list();
     map<int, vector<int> > item_rated_by_user_list = y_matrix->get_item_rated_by_user_list();
 
+    // for(map<int, vector<int> >::iterator itr = user_rating_item_list.begin();
+    //         itr != user_rating_item_list.end();
+    //         itr++){
+    //     printf("----------\nuser[%d]:", itr->first);
+    //     for(int i = 0; i < itr->second.size(); i++){
+    //         printf("%d ", itr->second[i]);
+    //     }
+    //     printf("\n");
+    // }
     if(c_flag == 'U'){
         for(int i = 0; i < rand_sample_index.size(); i++){
             int uid = rand_sample_index[i];
-            for(int j = 0; j < user_rating_item_list.size(); j++){
-                int iid = user_rating_item_list[i][j];
+            assert(uid < config->num_user);
+            for(int j = 0; j < user_rating_item_list[uid].size(); j++){
+                int iid = user_rating_item_list[uid][j];
+                assert(iid < config->num_item);
                 instance_set.insert(make_pair<int, int>(uid, iid));
             }
         }
@@ -283,8 +294,10 @@ void GBDT::TrainSingleTree(
     else{
         for(int i = 0; i < rand_sample_index.size(); i++){
             int iid = rand_sample_index[i];
-            for(int j = 0; j < item_rated_by_user_list.size(); j++){
-                int uid = item_rated_by_user_list[i][j];
+            assert(iid < config->num_item);
+            for(int j = 0; j < item_rated_by_user_list[iid].size(); j++){
+                int uid = item_rated_by_user_list[iid][j];
+                assert(uid < config->num_user);
                 instance_set.insert(make_pair<int, int>(uid, iid));
             }
         }
@@ -354,8 +367,11 @@ void GBDT::TrainSingleTree(
             G_left += g_ij[make_pair<int, int>(uid,iid)] * val;
             H_left += h_ij[make_pair<int, int>(uid,iid)] * val * val;
 
-            assert(G_left <= G_all);
-            assert(H_left <= H_all);
+            // printf("G_left:%f, G_all:%f\n", G_left, G_all);
+            // printf("H_left:%f, H_all:%f\n", H_left, H_all);
+
+            // assert(G_left <= G_all);
+            // assert(H_left <= H_all);
 
             G_right = G_all - G_left;
             H_right = G_all - H_left;

@@ -195,8 +195,8 @@ bool YMatrix::LoadData(const string& file_name){
 
         sum += rating;
         ratings[make_pair<int, int>(uid-1, iid-1)] = rating;
-        user_rating_item_list[uid].push_back(iid-1);
-        item_rated_by_user_list[iid].push_back(uid-1);
+        user_rating_item_list[uid-1].push_back(iid-1);
+        item_rated_by_user_list[iid-1].push_back(uid-1);
         // rating_matrix_[uid - 1][iid - 1] = rating;
         // y_value_[line_num - 1] = rating;
         // row_index_[line_num - 1] = uid;
@@ -327,6 +327,9 @@ bool FactorMatrix::Init(){
 }
 
 bool FactorMatrix::LoadFeature(const string& file_in){
+    /*
+     * FeatureFormat: uid/iid,fval1,fval2,fval3....
+     */
     ifstream fs;
     fs.open(file_in.c_str(), std::ios::in);
     while(fs.fail()){
@@ -495,8 +498,7 @@ void FactorMatrix::GBDTUpdate(const FactorMatrix* U,
         const YMatrix* y_matrix)
 {
     for(int i = 0; i < factor_num_; i++){
-        cout << "    Updating the kth factor GBDT of matrix " << 
-            c_flag << " ..." << endl;
+        printf("    Updating the %dth factor GBDT of matrix %c ...\n", i, c_flag);
         this->gbdt_for_each_factor_[i].ModelUpdate(this->feature_val_, 
                 U,V, bias_factor, this->c_flag, i, y_matrix);
     }
